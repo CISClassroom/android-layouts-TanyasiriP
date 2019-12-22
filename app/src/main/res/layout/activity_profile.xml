@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#CCFFCC"
     tools:context=".MainActivity">
 
     <Button
@@ -16,24 +16,32 @@
         android:layout_alignParentBottom="true"
 
         android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="5dp"
         android:background="#3366FF"
         android:text="Go back"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="476dp"
+        android:layout_height="788dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        app:srcCompat="@drawable/bg" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gbg" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/image_view"
@@ -43,19 +51,24 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="103dp"
-        android:layout_marginEnd="50dp"
 
+        android:layout_marginTop="50dp"
         android:src="@drawable/pf"
         app:civ_border_color="#fff"
-        app:civ_border_width="2dp" />
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="270dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view">
 
         <TextView
             android:id="@+id/textView"
@@ -132,26 +145,10 @@
             android:textColor="#3366FF"
             android:textSize="15dp" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="19dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="0dp"
-            android:gravity="center"
-            android:text="Things I LOVE"
-            android:textColor="#000"
-            android:textSize="15dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <TextView
@@ -167,9 +164,10 @@
                 android:layout_marginEnd="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Dessert"
-                android:textColor="#FF33CC"
-                android:textSize="13dp" />
+                android:text="Student ID."
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -184,12 +182,21 @@
                 android:layout_marginEnd="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Cat"
-                android:textColor="#FF33CC"
-                android:textSize="13dp" />
+                android:text="GPA"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_alignParentStart="true"
@@ -201,42 +208,30 @@
                 android:layout_marginEnd="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Naruto"
-                android:textColor="#FF33CC"
-                android:textSize="13dp" />
+                android:text="603410291-5"
+                android:textColor="#000"
+                android:textSize="15dp" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="0dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/dessert" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/cat" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/naruto" />
+                android:gravity="center"
+                android:text="3.43"
+                android:textColor="#000"
+                android:textSize="15dp" />
 
 
         </LinearLayout>
 
     </LinearLayout>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
