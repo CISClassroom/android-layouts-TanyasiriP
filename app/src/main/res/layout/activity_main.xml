@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Linear Layout"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="100dp"
+        android:background="#FFCCFF"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Relative Layout"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="185dp"
+        android:background="#CCCCFF"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Constrant Layout"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="264dp"
+        android:background="#99CCFF"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="My profile"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="264dp"
+        android:background="#66CCFF"/>
+
+</LinearLayout>
